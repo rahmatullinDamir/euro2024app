@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="euro2024app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Матчи" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYW-ZP-cWD">
+                                <rect key="frame" x="116" y="73" width="160" height="47.666666666666657"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-nH-Xei">
+                                <rect key="frame" x="19" y="154" width="355" height="229"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FaR-A1-AXL">
+                                        <rect key="frame" x="11" y="7" width="336.33333333333331" height="214"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="164" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-ud-TXE">
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="38"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Групповой этап" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulL-xH-udg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124" height="38"/>
+                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqP-eK-hc7">
+                                                        <rect key="frame" x="288" y="0.0" width="48" height="38"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="198" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-5h-9rE">
+                                                <rect key="frame" x="0.0" y="44" width="336.33333333333331" height="38"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/8 Финала" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-J0-t4E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="38"/>
+                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoZ-eD-He2">
+                                                        <rect key="frame" x="288.33333333333331" y="0.0" width="48" height="38"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="161" translatesAutoresizingMaskIntoConstraints="NO" id="8xv-3u-jml">
+                                                <rect key="frame" x="0.0" y="88" width="336" height="38"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Четвертьфинал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZS-DT-syC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="38"/>
+                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-x2-RVd">
+                                                        <rect key="frame" x="288" y="0.0" width="48" height="38"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="QV9-aj-lUo">
+                                                <rect key="frame" x="0.0" y="132" width="336" height="38"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полуфинал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edG-VE-djq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38"/>
+                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlx-Fg-LGX">
+                                                        <rect key="frame" x="288" y="0.0" width="48" height="38"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="235" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-nx-KKd">
+                                                <rect key="frame" x="0.0" y="176" width="336.33333333333331" height="38"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Финал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-Ya-9t1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="38"/>
+                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEW-Mz-qjO">
+                                                        <rect key="frame" x="288.33333333333331" y="0.0" width="48" height="38"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29019607843137252" green="0.72941176470588232" blue="0.52156862745098043" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="Ahq-PR-zbe"/>
+                                    <constraint firstItem="FaR-A1-AXL" firstAttribute="top" secondItem="NrB-nH-Xei" secondAttribute="top" constant="7" id="Jgp-eK-Ghd"/>
+                                    <constraint firstItem="FaR-A1-AXL" firstAttribute="leading" secondItem="NrB-nH-Xei" secondAttribute="leading" constant="11" id="KaP-vk-XJu"/>
+                                    <constraint firstAttribute="width" constant="355" id="vfQ-Bd-EGl"/>
+                                    <constraint firstAttribute="bottom" secondItem="FaR-A1-AXL" secondAttribute="bottom" constant="8" id="w7u-RT-w4x"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Турнирная таблица" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxQ-Jh-8c5">
+                                <rect key="frame" x="31" y="401" width="330" height="47.666666666666686"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-e5-FF6">
+                                <rect key="frame" x="19" y="472" width="355" height="261"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8dG-Xy-SdD">
+                                        <rect key="frame" x="8" y="8" width="339" height="245"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="339" id="Zb9-xh-sQK"/>
+                                            <constraint firstAttribute="height" constant="245" id="cjP-eh-7tj"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="339" id="dKr-EZ-cgz"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="245" id="hHn-gR-sKr"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="wxN-lf-RnQ" customClass="TableViewCell" customModule="euro2024app" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="339" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TableViewCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wxN-lf-RnQ" id="Cjd-uH-VTR" customClass="TableViewCell" customModule="euro2024app" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="339" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nJ-Jz-yNg">
+                                                            <rect key="frame" x="20" y="11" width="251" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ff-sB-oQY">
+                                                            <rect key="frame" x="279" y="2" width="48" height="38"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
+                                                        </button>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="tableViewCellLAble" destination="2nJ-Jz-yNg" id="HFT-Sk-cg2"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2901960784" green="0.72941176470000002" blue="0.52156862749999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8dG-Xy-SdD" firstAttribute="leading" secondItem="MeX-e5-FF6" secondAttribute="leading" constant="8" id="4Iz-Wg-ur1"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dG-Xy-SdD" secondAttribute="bottom" constant="8" id="5rq-ub-n5a"/>
+                                    <constraint firstItem="8dG-Xy-SdD" firstAttribute="leading" secondItem="MeX-e5-FF6" secondAttribute="leading" constant="8" id="9Ef-NO-vg6"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dG-Xy-SdD" secondAttribute="trailing" constant="8" id="J5j-9o-mLT"/>
+                                    <constraint firstAttribute="width" constant="355" id="fpc-uY-bzb"/>
+                                    <constraint firstAttribute="height" constant="261" id="frw-8R-2n5"/>
+                                    <constraint firstItem="8dG-Xy-SdD" firstAttribute="top" secondItem="MeX-e5-FF6" secondAttribute="top" constant="8" id="vtz-yE-U4n"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dG-Xy-SdD" secondAttribute="bottom" constant="8" id="wec-qJ-Tz8"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dG-Xy-SdD" secondAttribute="trailing" constant="8" id="wqk-8M-Eni"/>
+                                    <constraint firstItem="8dG-Xy-SdD" firstAttribute="top" secondItem="MeX-e5-FF6" secondAttribute="top" constant="8" id="y8h-qQ-2v0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NrB-nH-Xei" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="9cu-yg-CMs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HYW-ZP-cWD" secondAttribute="trailing" constant="117" id="BMv-p0-fr7"/>
+                            <constraint firstItem="MeX-e5-FF6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="Eqk-uZ-EvN"/>
+                            <constraint firstItem="NrB-nH-Xei" firstAttribute="top" secondItem="HYW-ZP-cWD" secondAttribute="bottom" constant="33.329999999999998" id="EyC-aj-49H"/>
+                            <constraint firstItem="HYW-ZP-cWD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="N62-dc-LnB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MeX-e5-FF6" secondAttribute="trailing" constant="19" id="QET-2A-o3z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NrB-nH-Xei" secondAttribute="trailing" constant="19" id="Z7W-SG-j9L"/>
+                            <constraint firstItem="KxQ-Jh-8c5" firstAttribute="top" secondItem="NrB-nH-Xei" secondAttribute="bottom" constant="18" id="cQx-q2-EYY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KxQ-Jh-8c5" secondAttribute="trailing" constant="32" id="j4o-gE-Ad7"/>
+                            <constraint firstItem="KxQ-Jh-8c5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="kqo-vG-v6p"/>
+                            <constraint firstItem="HYW-ZP-cWD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="pw2-Ux-0ce"/>
+                            <constraint firstItem="MeX-e5-FF6" firstAttribute="top" secondItem="KxQ-Jh-8c5" secondAttribute="bottom" constant="23.329999999999998" id="r37-TX-A12"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="competitionTableView" destination="MeX-e5-FF6" id="h9p-yq-TDO"/>
+                        <outlet property="final" destination="4hc-nx-KKd" id="fAd-cb-f1W"/>
+                        <outlet property="groupCompetition" destination="Tf8-ud-TXE" id="cu9-t0-tvU"/>
+                        <outlet property="halfFinal" destination="QV9-aj-lUo" id="cap-Qn-d9w"/>
+                        <outlet property="matchesView" destination="NrB-nH-Xei" id="vhW-qQ-4Af"/>
+                        <outlet property="odnavosmayaFinal" destination="PAo-5h-9rE" id="55V-0q-Keg"/>
+                        <outlet property="quaterFinal" destination="8xv-3u-jml" id="5sV-sw-twM"/>
+                        <outlet property="tournamentTableView" destination="8dG-Xy-SdD" id="V1L-qz-B0r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ArrowForward" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
