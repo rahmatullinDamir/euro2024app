@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8313C8BE2C3AC45C00FD6AD2 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */; };
 		83D193592C38079700882FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D193582C38079700882FB6 /* AppDelegate.swift */; };
 		83D1935B2C38079700882FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1935A2C38079700882FB6 /* SceneDelegate.swift */; };
 		83D1935D2C38079700882FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1935C2C38079700882FB6 /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		83D193622C38079900882FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D193612C38079900882FB6 /* Assets.xcassets */; };
 		83D193652C38079900882FB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83D193642C38079900882FB6 /* Base */; };
 		83D1936D2C38266100882FB6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1936C2C38266100882FB6 /* TableViewCell.swift */; };
+		83D1936F2C396ADA00882FB6 /* TournamentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		83D193552C38079700882FB6 /* euro2024app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = euro2024app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D193582C38079700882FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D1935A2C38079700882FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		83D193642C38079900882FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D193662C38079900882FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D1936C2C38266100882FB6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,12 @@
 				83D1935A2C38079700882FB6 /* SceneDelegate.swift */,
 				83D1935C2C38079700882FB6 /* ViewController.swift */,
 				83D1935E2C38079700882FB6 /* Main.storyboard */,
+				83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */,
 				83D193612C38079900882FB6 /* Assets.xcassets */,
 				83D193632C38079900882FB6 /* LaunchScreen.storyboard */,
 				83D193662C38079900882FB6 /* Info.plist */,
 				83D1936C2C38266100882FB6 /* TableViewCell.swift */,
+				8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */,
 			);
 			path = euro2024app;
 			sourceTree = "<group>";
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8313C8BE2C3AC45C00FD6AD2 /* MatchesViewController.swift in Sources */,
 				83D1935D2C38079700882FB6 /* ViewController.swift in Sources */,
 				83D1936D2C38266100882FB6 /* TableViewCell.swift in Sources */,
+				83D1936F2C396ADA00882FB6 /* TournamentTableViewController.swift in Sources */,
 				83D193592C38079700882FB6 /* AppDelegate.swift in Sources */,
 				83D1935B2C38079700882FB6 /* SceneDelegate.swift in Sources */,
 			);

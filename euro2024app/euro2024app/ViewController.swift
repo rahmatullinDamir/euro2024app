@@ -32,9 +32,11 @@ class UnderlineLayer: CALayer {
     
 }
 
+
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var groupCompetition: UIStackView!
     @IBOutlet weak var final: UIStackView!
     @IBOutlet weak var halfFinal: UIStackView!
@@ -45,6 +47,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tournamentTableView: UITableView!
     var dataSource: [String] = ["Группа A", "Группа B", "Группа C", "Группа D", "Группа E", "Группа F"]
+    var groupLable: String?
+    var matchesLableText: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         matchesView.layer.cornerRadius = 25
@@ -60,6 +65,7 @@ class ViewController: UIViewController {
         odnavosmayaFinal.layer.addSublayer(ur4.getCALayer())
         var ur5 = UnderlineLayer(inputElem: groupCompetition)
         groupCompetition.layer.addSublayer(ur5.getCALayer())
+      
         
         competitionTableView.layer.cornerRadius = 25
         tournamentTableView.backgroundColor = UIColor .clear
@@ -68,8 +74,26 @@ class ViewController: UIViewController {
         tournamentTableView.delegate = self
         
         
+        
         // Do any additional setup after loading the view.
         
+    }
+    
+    @objc func stackViewTapped() {
+        print("UIStackView был нажат")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tournament" {
+            if let destVC = segue.destination as? TournamentTableViewController {
+                destVC.groupLable = groupLable
+            }
+        }
+        if segue.identifier == "matches" {
+            if let destVC = segue.destination as? MatchesViewController {
+                destVC.matchesLableText = matchesLableText
+            }
+        }
     }
 
 
@@ -81,10 +105,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell else {return TableViewCell()}
         
         cell.config(nameOfLable: dataSource[indexPath.row])
         cell.backgroundColor = UIColor .clear
+        cell.selectionStyle = .none
+        
         return cell
     }
     
@@ -92,6 +118,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return 40
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        groupLable = dataSource[indexPath.row]
+        performSegue(withIdentifier: "tournament", sender: self)
+        
+    }
     
     
 }

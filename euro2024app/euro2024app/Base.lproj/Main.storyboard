@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dth-be-pH8">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Матчи" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYW-ZP-cWD">
-                                <rect key="frame" x="116" y="73" width="160" height="47.666666666666657"/>
+                                <rect key="frame" x="116" y="117.00000000000001" width="160" height="47.666666666666671"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-nH-Xei">
-                                <rect key="frame" x="19" y="154" width="355" height="229"/>
+                                <rect key="frame" x="19" y="198" width="355" height="229"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FaR-A1-AXL">
                                         <rect key="frame" x="11" y="7" width="336.33333333333331" height="214"/>
@@ -121,17 +121,17 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Турнирная таблица" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxQ-Jh-8c5">
-                                <rect key="frame" x="31" y="401" width="330" height="47.666666666666686"/>
+                                <rect key="frame" x="31" y="445" width="330" height="47.666666666666686"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeX-e5-FF6">
-                                <rect key="frame" x="19" y="472" width="355" height="261"/>
+                                <rect key="frame" x="19" y="516" width="355" height="261"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8dG-Xy-SdD">
                                         <rect key="frame" x="8" y="8" width="339" height="245"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="0.98121755848953263" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="339" id="Zb9-xh-sQK"/>
                                             <constraint firstAttribute="height" constant="245" id="cjP-eh-7tj"/>
@@ -161,6 +161,7 @@
                                                         </button>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="tableViewCellLAble" destination="2nJ-Jz-yNg" id="HFT-Sk-cg2"/>
                                                 </connections>
@@ -200,6 +201,7 @@
                             <constraint firstItem="MeX-e5-FF6" firstAttribute="top" secondItem="KxQ-Jh-8c5" secondAttribute="bottom" constant="23.329999999999998" id="r37-TX-A12"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hmd-pF-tcj"/>
                     <connections>
                         <outlet property="competitionTableView" destination="MeX-e5-FF6" id="h9p-yq-TDO"/>
                         <outlet property="final" destination="4hc-nx-KKd" id="fAd-cb-f1W"/>
@@ -208,12 +210,122 @@
                         <outlet property="matchesView" destination="NrB-nH-Xei" id="vhW-qQ-4Af"/>
                         <outlet property="odnavosmayaFinal" destination="PAo-5h-9rE" id="55V-0q-Keg"/>
                         <outlet property="quaterFinal" destination="8xv-3u-jml" id="5sV-sw-twM"/>
+                        <outlet property="stackView" destination="FaR-A1-AXL" id="sEq-5X-N18"/>
                         <outlet property="tournamentTableView" destination="8dG-Xy-SdD" id="V1L-qz-B0r"/>
+                        <segue destination="L2Y-vi-sOq" kind="show" id="g5m-0w-pso"/>
+                        <segue destination="Vc3-fD-0q0" kind="show" identifier="matches" id="sGX-hO-M8W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-364" y="17"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kU1-QJ-68n">
+            <objects>
+                <navigationController id="dth-be-pH8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dQm-9y-J0l"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SX9-0x-Sqe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DSf-FC-QTr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsX-1m-DzC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1140" y="17"/>
+        </scene>
+        <!--Tournament Table View Controller-->
+        <scene sceneID="DHr-MO-wFw">
+            <objects>
+                <viewController id="L2Y-vi-sOq" customClass="TournamentTableViewController" customModule="euro2024app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z5j-8j-ZES">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J8-bu-yNe">
+                                <rect key="frame" x="116" y="117" width="160" height="0.0"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGk-4K-AYt">
+                                <rect key="frame" x="16" y="180" width="361" height="622"/>
+                                <color key="backgroundColor" red="0.29019607843137252" green="0.72941176470588232" blue="0.52156862745098043" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="IxT-s9-AQa"/>
+                                    <constraint firstAttribute="height" constant="622" id="exA-RE-mOi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h9u-UC-NYe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2J8-bu-yNe" firstAttribute="leading" secondItem="h9u-UC-NYe" secondAttribute="leading" constant="116" id="8ty-E5-THc"/>
+                            <constraint firstItem="h9u-UC-NYe" firstAttribute="trailing" secondItem="2J8-bu-yNe" secondAttribute="trailing" constant="117" id="Kj6-xE-aWH"/>
+                            <constraint firstItem="2J8-bu-yNe" firstAttribute="top" secondItem="h9u-UC-NYe" secondAttribute="top" constant="14" id="L9T-UB-ksP"/>
+                            <constraint firstItem="uGk-4K-AYt" firstAttribute="leading" secondItem="h9u-UC-NYe" secondAttribute="leading" constant="16" id="TQy-1H-Vkx"/>
+                            <constraint firstItem="h9u-UC-NYe" firstAttribute="trailing" secondItem="uGk-4K-AYt" secondAttribute="trailing" constant="16" id="uwu-zJ-EmN"/>
+                            <constraint firstItem="uGk-4K-AYt" firstAttribute="top" secondItem="2J8-bu-yNe" secondAttribute="bottom" constant="63" id="zSN-Qg-R3c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xyc-Io-Vok"/>
+                    <connections>
+                        <outlet property="tournamentLable" destination="2J8-bu-yNe" id="rtY-Nu-xCe"/>
+                        <outlet property="tournamentView" destination="uGk-4K-AYt" id="wK5-FJ-okF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cr-St-Yhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316.793893129771" y="444.36619718309862"/>
+        </scene>
+        <!--Matches View Controller-->
+        <scene sceneID="VCp-8R-756">
+            <objects>
+                <viewController id="Vc3-fD-0q0" customClass="MatchesViewController" customModule="euro2024app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovG-Yy-72L">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1E-J6-Fcc">
+                                <rect key="frame" x="116" y="117" width="160" height="0.0"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3D-gw-a0N">
+                                <rect key="frame" x="16" y="180" width="361" height="622"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.72941176470000002" blue="0.52156862749999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="4Gf-Oq-y7R"/>
+                                    <constraint firstAttribute="height" constant="622" id="bIH-SV-GK2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kk4-Eb-LSJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kk4-Eb-LSJ" firstAttribute="trailing" secondItem="u1E-J6-Fcc" secondAttribute="trailing" constant="117" id="SdT-1x-74p"/>
+                            <constraint firstItem="u1E-J6-Fcc" firstAttribute="top" secondItem="kk4-Eb-LSJ" secondAttribute="top" constant="14" id="ezM-bc-FLZ"/>
+                            <constraint firstItem="u1E-J6-Fcc" firstAttribute="leading" secondItem="kk4-Eb-LSJ" secondAttribute="leading" constant="116" id="izu-io-paw"/>
+                            <constraint firstItem="E3D-gw-a0N" firstAttribute="top" secondItem="u1E-J6-Fcc" secondAttribute="bottom" constant="63" id="ofp-34-SLU"/>
+                            <constraint firstItem="kk4-Eb-LSJ" firstAttribute="trailing" secondItem="E3D-gw-a0N" secondAttribute="trailing" constant="16" id="t25-RW-UPh"/>
+                            <constraint firstItem="E3D-gw-a0N" firstAttribute="leading" secondItem="kk4-Eb-LSJ" secondAttribute="leading" constant="16" id="x4r-Z2-5Uc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LGx-7B-duw"/>
+                    <connections>
+                        <outlet property="matchesLable" destination="u1E-J6-Fcc" id="5dh-M2-XQ5"/>
+                        <outlet property="matchesView" destination="E3D-gw-a0N" id="iXj-UC-t6O"/>
+                        <outlet property="tournamentLable" destination="u1E-J6-Fcc" id="RH7-sW-MGQ"/>
+                        <outlet property="tournamentView" destination="E3D-gw-a0N" id="4Z8-vz-5O9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mah-7D-YLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-519"/>
         </scene>
     </scenes>
     <resources>
