@@ -25,84 +25,99 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-nH-Xei">
                                 <rect key="frame" x="19" y="198" width="355" height="229"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FaR-A1-AXL">
-                                        <rect key="frame" x="11" y="7" width="336.33333333333331" height="214"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FaR-A1-AXL">
+                                        <rect key="frame" x="11" y="7" width="334" height="214"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="164" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-ud-TXE">
-                                                <rect key="frame" x="0.0" y="0.0" width="336" height="38"/>
+                                            <stackView opaque="NO" contentMode="left" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Tf8-ud-TXE">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="38"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Групповой этап" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulL-xH-udg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124" height="38"/>
-                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdH-H8-256">
+                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="38"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Групповой этап                              "/>
+                                                        <connections>
+                                                            <action selector="groupMatchesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTj-f7-DDd"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqP-eK-hc7">
-                                                        <rect key="frame" x="288" y="0.0" width="48" height="38"/>
+                                                        <rect key="frame" x="286" y="0.0" width="48" height="38"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="198" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-5h-9rE">
-                                                <rect key="frame" x="0.0" y="44" width="336.33333333333331" height="38"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-5h-9rE">
+                                                <rect key="frame" x="0.0" y="44" width="332.66666666666669" height="38"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/8 Финала" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-J0-t4E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="38"/>
-                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00N-4y-kza">
+                                                        <rect key="frame" x="0.0" y="0.0" width="281.66666666666669" height="38"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="1/8 Финала                                       "/>
+                                                        <connections>
+                                                            <action selector="odnaVosmayaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KgB-1A-zPP"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoZ-eD-He2">
-                                                        <rect key="frame" x="288.33333333333331" y="0.0" width="48" height="38"/>
+                                                        <rect key="frame" x="284.66666666666669" y="0.0" width="48" height="38"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="161" translatesAutoresizingMaskIntoConstraints="NO" id="8xv-3u-jml">
-                                                <rect key="frame" x="0.0" y="88" width="336" height="38"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8xv-3u-jml">
+                                                <rect key="frame" x="0.0" y="88" width="332.66666666666669" height="38"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Четвертьфинал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZS-DT-syC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="38"/>
-                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-cZ-umy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="281.66666666666669" height="38"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Четвертьфинал                               "/>
+                                                        <connections>
+                                                            <action selector="quaterFinalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrj-05-wOw"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-x2-RVd">
-                                                        <rect key="frame" x="288" y="0.0" width="48" height="38"/>
+                                                        <rect key="frame" x="284.66666666666669" y="0.0" width="48" height="38"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="QV9-aj-lUo">
-                                                <rect key="frame" x="0.0" y="132" width="336" height="38"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QV9-aj-lUo">
+                                                <rect key="frame" x="0.0" y="132" width="334" height="38"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полуфинал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edG-VE-djq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="38"/>
-                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-zv-Zhk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="284" height="38"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Полуфинал                                       "/>
+                                                        <connections>
+                                                            <action selector="halfFinalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awO-8D-0cq"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlx-Fg-LGX">
-                                                        <rect key="frame" x="288" y="0.0" width="48" height="38"/>
+                                                        <rect key="frame" x="286" y="0.0" width="48" height="38"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="235" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-nx-KKd">
-                                                <rect key="frame" x="0.0" y="176" width="336.33333333333331" height="38"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-nx-KKd">
+                                                <rect key="frame" x="0.0" y="176" width="333.33333333333331" height="38"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Финал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-Ya-9t1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="53.333333333333336" height="38"/>
-                                                        <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-Bd-fBf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280.33333333333331" height="38"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Финал                                               "/>
+                                                        <connections>
+                                                            <action selector="finalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGl-MM-RGr"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEW-Mz-qjO">
-                                                        <rect key="frame" x="288.33333333333331" y="0.0" width="48" height="38"/>
+                                                        <rect key="frame" x="285.33333333333331" y="0.0" width="48" height="38"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="ArrowForward" title=""/>
                                                     </button>
@@ -212,13 +227,13 @@
                         <outlet property="quaterFinal" destination="8xv-3u-jml" id="5sV-sw-twM"/>
                         <outlet property="stackView" destination="FaR-A1-AXL" id="sEq-5X-N18"/>
                         <outlet property="tournamentTableView" destination="8dG-Xy-SdD" id="V1L-qz-B0r"/>
-                        <segue destination="L2Y-vi-sOq" kind="show" id="g5m-0w-pso"/>
+                        <segue destination="L2Y-vi-sOq" kind="show" identifier="tournament" id="g5m-0w-pso"/>
                         <segue destination="Vc3-fD-0q0" kind="show" identifier="matches" id="sGX-hO-M8W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-364" y="17"/>
+            <point key="canvasLocation" x="-364.12213740458014" y="16.901408450704228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kU1-QJ-68n">
@@ -290,7 +305,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1E-J6-Fcc">
-                                <rect key="frame" x="116" y="117" width="160" height="0.0"/>
+                                <rect key="frame" x="55" y="117" width="284" height="0.0"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -307,29 +322,30 @@
                         <viewLayoutGuide key="safeArea" id="kk4-Eb-LSJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kk4-Eb-LSJ" firstAttribute="trailing" secondItem="u1E-J6-Fcc" secondAttribute="trailing" constant="117" id="SdT-1x-74p"/>
-                            <constraint firstItem="u1E-J6-Fcc" firstAttribute="top" secondItem="kk4-Eb-LSJ" secondAttribute="top" constant="14" id="ezM-bc-FLZ"/>
-                            <constraint firstItem="u1E-J6-Fcc" firstAttribute="leading" secondItem="kk4-Eb-LSJ" secondAttribute="leading" constant="116" id="izu-io-paw"/>
-                            <constraint firstItem="E3D-gw-a0N" firstAttribute="top" secondItem="u1E-J6-Fcc" secondAttribute="bottom" constant="63" id="ofp-34-SLU"/>
+                            <constraint firstAttribute="trailing" secondItem="u1E-J6-Fcc" secondAttribute="trailing" constant="54" id="PWU-iP-Ot5"/>
+                            <constraint firstItem="E3D-gw-a0N" firstAttribute="top" secondItem="u1E-J6-Fcc" secondAttribute="bottom" constant="63" id="Pqg-sN-Ges"/>
                             <constraint firstItem="kk4-Eb-LSJ" firstAttribute="trailing" secondItem="E3D-gw-a0N" secondAttribute="trailing" constant="16" id="t25-RW-UPh"/>
                             <constraint firstItem="E3D-gw-a0N" firstAttribute="leading" secondItem="kk4-Eb-LSJ" secondAttribute="leading" constant="16" id="x4r-Z2-5Uc"/>
+                            <constraint firstItem="u1E-J6-Fcc" firstAttribute="top" secondItem="kk4-Eb-LSJ" secondAttribute="top" constant="14" id="xfW-6y-Wfw"/>
+                            <constraint firstItem="u1E-J6-Fcc" firstAttribute="leading" secondItem="ovG-Yy-72L" secondAttribute="leading" constant="55" id="z3J-H6-ESN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LGx-7B-duw"/>
                     <connections>
                         <outlet property="matchesLable" destination="u1E-J6-Fcc" id="5dh-M2-XQ5"/>
                         <outlet property="matchesView" destination="E3D-gw-a0N" id="iXj-UC-t6O"/>
-                        <outlet property="tournamentLable" destination="u1E-J6-Fcc" id="RH7-sW-MGQ"/>
-                        <outlet property="tournamentView" destination="E3D-gw-a0N" id="4Z8-vz-5O9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mah-7D-YLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1317" y="-519"/>
+            <point key="canvasLocation" x="1316.793893129771" y="-519.0140845070423"/>
         </scene>
     </scenes>
     <resources>
         <image name="ArrowForward" width="24" height="24"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

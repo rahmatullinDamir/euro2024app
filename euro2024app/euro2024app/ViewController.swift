@@ -33,6 +33,7 @@ class UnderlineLayer: CALayer {
 }
 
 
+
 class ViewController: UIViewController {
 
     
@@ -79,8 +80,27 @@ class ViewController: UIViewController {
         
     }
     
-    @objc func stackViewTapped() {
-        print("UIStackView был нажат")
+    @IBAction func groupMatchesButton(_ sender: Any) {
+        goToNextViewFromMatches(matchesType: "Групповой этап")
+    }
+    @IBAction func odnaVosmayaButton(_ sender: Any) {
+        goToNextViewFromMatches(matchesType: "1/8 Финала")
+    }
+    @IBAction func quaterFinalButton(_ sender: Any) {
+        goToNextViewFromMatches(matchesType: "Четвертьфинал")
+    }
+    @IBAction func halfFinalButton(_ sender: Any) {
+        goToNextViewFromMatches(matchesType: "Полуфинал")
+    }
+    
+    @IBAction func finalButton(_ sender: Any) {
+        goToNextViewFromMatches(matchesType: "Финал")
+    }
+    
+    
+    private func goToNextViewFromMatches(matchesType: String) {
+        matchesLableText = matchesType
+        performSegue(withIdentifier: "matches", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
