@@ -26,6 +26,9 @@ class MatchesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func getInfoFromJSON() {
+//        let url = NSURLConnection("")
+    }
 
     /*
     // MARK: - Navigation
