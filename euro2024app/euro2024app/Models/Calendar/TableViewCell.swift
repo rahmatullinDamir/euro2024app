@@ -10,6 +10,8 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
 
+    
+    
 
     @IBOutlet weak var tableViewCellLAble: UILabel!
     override func prepareForReuse() {
@@ -17,8 +19,8 @@ class TableViewCell: UITableViewCell {
     }
     
     func config(nameOfLable: String) {
-        tableViewCellLAble.text = nameOfLable
+        tableViewCellLAble.text = nameOfLable    
     }
-  
+    
 
 }
