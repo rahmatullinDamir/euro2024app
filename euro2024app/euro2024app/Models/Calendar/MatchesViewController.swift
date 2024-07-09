@@ -9,12 +9,12 @@ import UIKit
 
 class MatchesViewController: UIViewController {
     
-    let sessionConfiguration = URLSessionConfiguration.default
+   
     @IBOutlet weak var matchesView: UIView!
     @IBOutlet weak var matchesLable: UILabel!
-    let session = URLSession.shared
     
     
+    let networkManager = NetworkManager()
     var matchesLableText: String?
     
     func config(matchesLableText: String) {
@@ -25,20 +25,15 @@ class MatchesViewController: UIViewController {
         super.viewDidLoad()
         matchesView.layer.cornerRadius = 25
         matchesLable.text = matchesLableText
-        
+        networkManager.getInfoFromJSON { result in
+            DispatchQueue.main.async {
+                print(result)
+            }
+        }
         // Do any additional setup after loading the view.
     }
     
-    func getInfoFromJSON() {
-        
-        guard let url = URL(string: "https://github.com/openfootball/euro.json/blob/master/2024/euro.json") else {return}
-        
-        session.dataTask(with: <#T##URLRequest#>) { data, response, error in
-        
-        }.resume()
-         
-//        let url = NSURLConnection("")
-    }
+    
 
     /*
     // MARK: - Navigation
