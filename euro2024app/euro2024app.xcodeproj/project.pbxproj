@@ -18,6 +18,7 @@
 		83D193652C38079900882FB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83D193642C38079900882FB6 /* Base */; };
 		83D1936D2C38266100882FB6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1936C2C38266100882FB6 /* TableViewCell.swift */; };
 		83D1936F2C396ADA00882FB6 /* TournamentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */; };
+		92FE34782C3D6AE90065EC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FE34772C3D6AE90065EC28 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +29,13 @@
 		83D193582C38079700882FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D1935A2C38079700882FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83D1935C2C38079700882FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83D1935F2C38079700882FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83D1935F2C38079700882FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CalendarPage.storyboard; sourceTree = "<group>"; };
 		83D193612C38079900882FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D193642C38079900882FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		83D193662C38079900882FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D193662C38079900882FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Modules/Calendar/Info.plist; sourceTree = "<group>"; };
 		83D1936C2C38266100882FB6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTableViewController.swift; sourceTree = "<group>"; };
+		92FE34772C3D6AE90065EC28 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,24 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8313C8C12C3C14CE00FD6AD2 /* Models */ = {
+		8313C8C12C3C14CE00FD6AD2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				8313C8C42C3CFC0200FD6AD2 /* Calendar */,
 			);
-			path = Models;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		8313C8C42C3CFC0200FD6AD2 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				83D1935C2C38079700882FB6 /* ViewController.swift */,
-				83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */,
-				83D193662C38079900882FB6 /* Info.plist */,
-				8313C8C22C3C151400FD6AD2 /* Models.swift */,
-				83D1936C2C38266100882FB6 /* TableViewCell.swift */,
-				8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */,
-				8313C8C82C3D241900FD6AD2 /* NetworkManager.swift */,
+				92FE34762C3D6AC60065EC28 /* Page */,
+				92FE34752C3D6A830065EC28 /* Views */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -90,7 +87,7 @@
 		8313C8C72C3D125400FD6AD2 /* Base.iproj */ = {
 			isa = PBXGroup;
 			children = (
-				83D1935E2C38079700882FB6 /* Main.storyboard */,
+				92FE34772C3D6AE90065EC28 /* Main.storyboard */,
 			);
 			path = Base.iproj;
 			sourceTree = "<group>";
@@ -114,12 +111,50 @@
 		83D193572C38079700882FB6 /* euro2024app */ = {
 			isa = PBXGroup;
 			children = (
+				83D193612C38079900882FB6 /* Assets.xcassets */,
+				83D193662C38079900882FB6 /* Info.plist */,
+				927BD3522C3D6D8B00738043 /* Services */,
+				92FE34742C3D6A350065EC28 /* Models */,
 				8313C8C72C3D125400FD6AD2 /* Base.iproj */,
 				8313C8C52C3D11CD00FD6AD2 /* AppLifeCycle */,
-				83D193612C38079900882FB6 /* Assets.xcassets */,
-				8313C8C12C3C14CE00FD6AD2 /* Models */,
+				8313C8C12C3C14CE00FD6AD2 /* Modules */,
 			);
 			path = euro2024app;
+			sourceTree = "<group>";
+		};
+		927BD3522C3D6D8B00738043 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8313C8C82C3D241900FD6AD2 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92FE34742C3D6A350065EC28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8313C8C22C3C151400FD6AD2 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92FE34752C3D6A830065EC28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83D1935C2C38079700882FB6 /* ViewController.swift */,
+				83D1936C2C38266100882FB6 /* TableViewCell.swift */,
+				83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */,
+				8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92FE34762C3D6AC60065EC28 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				83D1935E2C38079700882FB6 /* CalendarPage.storyboard */,
+			);
+			path = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +218,7 @@
 				83D193622C38079900882FB6 /* Assets.xcassets in Resources */,
 				83D193652C38079900882FB6 /* Base in Resources */,
 				83D193602C38079700882FB6 /* Base in Resources */,
+				92FE34782C3D6AE90065EC28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +243,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83D1935E2C38079700882FB6 /* Main.storyboard */ = {
+		83D1935E2C38079700882FB6 /* CalendarPage.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83D1935F2C38079700882FB6 /* Base */,
 			);
-			name = Main.storyboard;
+			name = CalendarPage.storyboard;
 			sourceTree = "<group>";
 		};
 		83D193632C38079900882FB6 /* LaunchScreen.storyboard */ = {
@@ -360,6 +396,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,6 +425,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
