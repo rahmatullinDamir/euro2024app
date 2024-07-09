@@ -8,9 +8,12 @@
 import UIKit
 
 class MatchesViewController: UIViewController {
-
+    
+    let sessionConfiguration = URLSessionConfiguration.default
     @IBOutlet weak var matchesView: UIView!
     @IBOutlet weak var matchesLable: UILabel!
+    let session = URLSession.shared
+    
     
     var matchesLableText: String?
     
@@ -27,6 +30,13 @@ class MatchesViewController: UIViewController {
     }
     
     func getInfoFromJSON() {
+        
+        guard let url = URL(string: "https://github.com/openfootball/euro.json/blob/master/2024/euro.json") else {return}
+        
+        session.dataTask(with: <#T##URLRequest#>) { data, response, error in
+        
+        }.resume()
+         
 //        let url = NSURLConnection("")
     }
 
