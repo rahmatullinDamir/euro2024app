@@ -56,19 +56,40 @@
 		8313C8C42C3CFC0200FD6AD2 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				83D1935A2C38079700882FB6 /* SceneDelegate.swift */,
 				83D1935C2C38079700882FB6 /* ViewController.swift */,
-				83D1935E2C38079700882FB6 /* Main.storyboard */,
 				83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */,
-				83D193612C38079900882FB6 /* Assets.xcassets */,
-				83D193632C38079900882FB6 /* LaunchScreen.storyboard */,
 				83D193662C38079900882FB6 /* Info.plist */,
 				83D1936C2C38266100882FB6 /* TableViewCell.swift */,
 				8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */,
 				8313C8C22C3C151400FD6AD2 /* Models.swift */,
-				83D193582C38079700882FB6 /* AppDelegate.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8313C8C52C3D11CD00FD6AD2 /* AppLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				8313C8C62C3D122F00FD6AD2 /* Base.iproj */,
+				83D193582C38079700882FB6 /* AppDelegate.swift */,
+				83D1935A2C38079700882FB6 /* SceneDelegate.swift */,
+			);
+			path = AppLifeCycle;
+			sourceTree = "<group>";
+		};
+		8313C8C62C3D122F00FD6AD2 /* Base.iproj */ = {
+			isa = PBXGroup;
+			children = (
+				83D193632C38079900882FB6 /* LaunchScreen.storyboard */,
+			);
+			path = Base.iproj;
+			sourceTree = "<group>";
+		};
+		8313C8C72C3D125400FD6AD2 /* Base.iproj */ = {
+			isa = PBXGroup;
+			children = (
+				83D1935E2C38079700882FB6 /* Main.storyboard */,
+			);
+			path = Base.iproj;
 			sourceTree = "<group>";
 		};
 		83D1934C2C38079700882FB6 = {
@@ -90,6 +111,9 @@
 		83D193572C38079700882FB6 /* euro2024app */ = {
 			isa = PBXGroup;
 			children = (
+				8313C8C72C3D125400FD6AD2 /* Base.iproj */,
+				8313C8C52C3D11CD00FD6AD2 /* AppLifeCycle */,
+				83D193612C38079900882FB6 /* Assets.xcassets */,
 				8313C8C12C3C14CE00FD6AD2 /* Models */,
 			);
 			path = euro2024app;
