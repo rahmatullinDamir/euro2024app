@@ -16,6 +16,13 @@ class MatchesViewController: UIViewController {
     
     let networkManager = NetworkManager()
     var matchesLableText: String?
+    var groupMatches:[Round] = []
+    var odnaVosmayaFinalMatches:[Round] = []
+    var quaterFinalMatches:[Round] = []
+    var semiFinalMatches:[Round] = []
+    var finalMatch:[Round] = []
+
+    @IBOutlet weak var tableViewMatches: UITableView!
     
     func config(matchesLableText: String) {
         self.matchesLableText = matchesLableText
@@ -26,10 +33,27 @@ class MatchesViewController: UIViewController {
         matchesView.layer.cornerRadius = 25
         matchesLable.text = matchesLableText
         networkManager.getInfoFromJSON { result in
-            DispatchQueue.main.async {
-                print(result)
+            for round in result.rounds {
+                if round.name.contains("Matchday") { // лежат объекты класса round а должны как-то стать объектами Match
+                    self.groupMatches.append(round)
+                }
+                else if round.name.contains("Round of 16") {
+                    self.odnaVosmayaFinalMatches.append(round)
+                }
+                else if round.name.contains("Quarter-finals") {
+                    self.quaterFinalMatches.append(round)
+                }
+                else if round.name.contains("Semi-finals") {
+                    self.semiFinalMatches.append(round)
+                }
+                else if round.name.contains("Final") {
+                    self.finalMatch.append(round)
+                }
             }
         }
+        tableViewMatches.dataSource = self
+        tableViewMatches.delegate = self
+        print(self.groupMatches)
         // Do any additional setup after loading the view.
     }
     
@@ -45,4 +69,18 @@ class MatchesViewController: UIViewController {
     }
     */
 
+}
+
+extension MatchesViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MatchesTableViewCell") as? MatchesTableViewCell else {return UITableViewCell()}
+        cell.config(match: self.groupMatches[indexPath.row])
+        return cell
+    }
+    
+    
 }
