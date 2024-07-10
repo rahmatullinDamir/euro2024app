@@ -46,8 +46,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var competitionTableView: UIView!
     @IBOutlet weak var tournamentTableView: UITableView!
     
-    var dataSource: [String] = ["Группа A", "Группа B", "Группа C", "Группа D", "Группа E", "Группа F"]
-    var groupLabel: String?
+    var dataSource: [Groups] = [.GroupA, .GroupB, .GroupC, .GroupD, .GroupE, .GroupF]
+    var groupLabel: Groups?
     var matchesLabelText: MatchStage?
     
     override func viewDidLoad() {
@@ -98,9 +98,9 @@ class ViewController: UIViewController {
         if segue.identifier == "tournament", let destVC = segue.destination as? TournamentTableViewController {
             destVC.groupLable = groupLabel
         }
-        if segue.identifier == "matches", let destVC = segue.destination as? MatchesViewController {
-            destVC.matchesLabelText = matchesLabelText
-        }
+//        if segue.identifier == "matches", let destVC = segue.destination as? MatchesViewController {
+//            destVC.matchesLabelText = matchesLabelText
+//        }
     }
 }
 
@@ -113,7 +113,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell else {
             return TableViewCell()
         }
-        cell.config(nameOfLable: dataSource[indexPath.row])
+        cell.config(nameOfLable: dataSource[indexPath.row].roundNameLabel)
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         return cell

@@ -19,6 +19,7 @@ class MatchesTableViewCell: UITableViewCell {
     @IBOutlet weak var dateOfMatch: UILabel!
     @IBOutlet weak var secondTeamScore: UILabel!
     @IBOutlet weak var firstTeamScore: UILabel!
+    
     override func prepareForReuse() {
          super.prepareForReuse()
     }

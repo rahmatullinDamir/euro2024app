@@ -42,9 +42,9 @@ class MatchesViewController: UIViewController {
             DispatchQueue.main.async {
                     self.tableViewMatches.reloadData() // Обновление таблицы в главном потоке
                 }
-                tableViewMatches.delegate = self
-                tableViewMatches.dataSource = self
         }
+        tableViewMatches.delegate = self
+        tableViewMatches.dataSource = self
     }
     
 //    func displayMatches(matches: [Match]) {
@@ -66,7 +66,6 @@ extension MatchesViewController:  UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.config(match: matches[indexPath.row])
-        
         return cell
     }
     
