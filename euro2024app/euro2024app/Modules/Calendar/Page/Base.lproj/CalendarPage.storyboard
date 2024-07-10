@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dth-be-pH8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dth-be-pH8">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Расписание матчей-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="euro2024app" customModuleProvider="target" sceneMemberID="viewController">
@@ -127,7 +128,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.29019607843137252" green="0.72941176470588232" blue="0.52156862745098043" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="myColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="229" id="Ahq-PR-zbe"/>
                                     <constraint firstItem="FaR-A1-AXL" firstAttribute="top" secondItem="NrB-nH-Xei" secondAttribute="top" constant="7" id="Jgp-eK-Ghd"/>
@@ -185,7 +186,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.2901960784" green="0.72941176470000002" blue="0.52156862749999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="myColor"/>
                                 <constraints>
                                     <constraint firstItem="8dG-Xy-SdD" firstAttribute="leading" secondItem="MeX-e5-FF6" secondAttribute="leading" constant="8" id="4Iz-Wg-ur1"/>
                                     <constraint firstAttribute="bottom" secondItem="8dG-Xy-SdD" secondAttribute="bottom" constant="8" id="5rq-ub-n5a"/>
@@ -217,7 +218,9 @@
                             <constraint firstItem="MeX-e5-FF6" firstAttribute="top" secondItem="KxQ-Jh-8c5" secondAttribute="bottom" constant="23.329999999999998" id="r37-TX-A12"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Расписание матчей" image="sportscourt.circle.fill" catalog="system" id="mqb-H8-WT4"/>
                     <navigationItem key="navigationItem" id="Hmd-pF-tcj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="competitionTableView" destination="MeX-e5-FF6" id="h9p-yq-TDO"/>
                         <outlet property="final" destination="4hc-nx-KKd" id="fAd-cb-f1W"/>
@@ -269,7 +272,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGk-4K-AYt">
                                 <rect key="frame" x="16" y="180" width="361" height="622"/>
-                                <color key="backgroundColor" red="0.29019607843137252" green="0.72941176470588232" blue="0.52156862745098043" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="myColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="361" id="IxT-s9-AQa"/>
                                     <constraint firstAttribute="height" constant="622" id="exA-RE-mOi"/>
@@ -313,7 +316,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3D-gw-a0N">
                                 <rect key="frame" x="16" y="180" width="361" height="622"/>
-                                <color key="backgroundColor" red="0.2901960784" green="0.72941176470000002" blue="0.52156862749999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="myColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="361" id="4Gf-Oq-y7R"/>
                                     <constraint firstAttribute="height" constant="622" id="bIH-SV-GK2"/>
@@ -344,6 +347,10 @@
     </scenes>
     <resources>
         <image name="ArrowForward" width="24" height="24"/>
+        <image name="sportscourt.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="myColor">
+            <color red="0.28999999165534973" green="0.72899997234344482" blue="0.5220000147819519" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
