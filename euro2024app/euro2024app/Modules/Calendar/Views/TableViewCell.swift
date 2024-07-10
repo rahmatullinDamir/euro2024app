@@ -9,10 +9,6 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-
-    
-    
-
     @IBOutlet weak var tableViewCellLAble: UILabel!
     override func prepareForReuse() {
          super.prepareForReuse()

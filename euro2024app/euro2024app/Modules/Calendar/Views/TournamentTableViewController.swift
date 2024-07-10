@@ -13,8 +13,9 @@ class TournamentTableViewController: UIViewController {
     @IBOutlet weak var tournamentView: UIView!
     
     @IBOutlet weak var tournamentLable: UILabel!
-    func config(groupLable: String) {
-        self.groupLable = groupLable
+    
+    func config(groupLabel: String) {
+        self.groupLable = groupLabel
     }
 
     override func viewDidLoad() {

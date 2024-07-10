@@ -32,10 +32,9 @@ class UnderlineLayer: CALayer {
     
 }
 
-
+import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var groupCompetition: UIStackView!
@@ -44,93 +43,79 @@ class ViewController: UIViewController {
     @IBOutlet weak var quaterFinal: UIStackView!
     @IBOutlet weak var odnavosmayaFinal: UIStackView!
     @IBOutlet weak var matchesView: UIView!
-    @IBOutlet weak var competitionTableView: UIView!  
-    
+    @IBOutlet weak var competitionTableView: UIView!
     @IBOutlet weak var tournamentTableView: UITableView!
+    
     var dataSource: [String] = ["Группа A", "Группа B", "Группа C", "Группа D", "Группа E", "Группа F"]
-    var groupLable: String?
-    var matchesLableText: String?
+    var groupLabel: String?
+    var matchesLabelText: MatchStage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         matchesView.layer.cornerRadius = 25
         
-        
-        var ur1 = UnderlineLayer(inputElem: final)
-        final.layer.addSublayer(ur1.getCALayer())
-        var ur2 = UnderlineLayer(inputElem: halfFinal)
-        halfFinal.layer.addSublayer(ur2.getCALayer())
-        var ur3 = UnderlineLayer(inputElem: quaterFinal)
-        quaterFinal.layer.addSublayer(ur3.getCALayer())
-        var ur4 = UnderlineLayer(inputElem: odnavosmayaFinal)
-        odnavosmayaFinal.layer.addSublayer(ur4.getCALayer())
-        var ur5 = UnderlineLayer(inputElem: groupCompetition)
-        groupCompetition.layer.addSublayer(ur5.getCALayer())
-      
+        // Underline layers setup
+        let underlines = [final, halfFinal, quaterFinal, odnavosmayaFinal, groupCompetition]
+        underlines.forEach { underline in
+            if let underline = underline {
+                let ur = UnderlineLayer(inputElem: underline)
+                underline.layer.addSublayer(ur.getCALayer())
+            }
+        }
         
         competitionTableView.layer.cornerRadius = 25
-        tournamentTableView.backgroundColor = UIColor .clear
-       
+        tournamentTableView.backgroundColor = .clear
         tournamentTableView.dataSource = self
         tournamentTableView.delegate = self
-        
-        
-        
-        // Do any additional setup after loading the view.
-        
     }
     
     @IBAction func groupMatchesButton(_ sender: Any) {
-        goToNextViewFromMatches(matchesType: "Групповой этап")
+        goToNextViewFromMatches(matchesType: .groupStage)
     }
+    
     @IBAction func odnaVosmayaButton(_ sender: Any) {
-        goToNextViewFromMatches(matchesType: "1/8 Финала")
+        goToNextViewFromMatches(matchesType: .roundOf16)
     }
+    
     @IBAction func quaterFinalButton(_ sender: Any) {
-        goToNextViewFromMatches(matchesType: "Четвертьфинал")
+        goToNextViewFromMatches(matchesType: .quarterFinals)
     }
+    
     @IBAction func halfFinalButton(_ sender: Any) {
-        goToNextViewFromMatches(matchesType: "Полуфинал")
+        goToNextViewFromMatches(matchesType: .semiFinals)
     }
     
     @IBAction func finalButton(_ sender: Any) {
-        goToNextViewFromMatches(matchesType: "Финал")
+        goToNextViewFromMatches(matchesType: .finals)
     }
     
-    
-    private func goToNextViewFromMatches(matchesType: String) {
-        matchesLableText = matchesType
+    private func goToNextViewFromMatches(matchesType: MatchStage) {
+        matchesLabelText = matchesType
         performSegue(withIdentifier: "matches", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "tournament" {
-            if let destVC = segue.destination as? TournamentTableViewController {
-                destVC.groupLable = groupLable
-            }
+        if segue.identifier == "tournament", let destVC = segue.destination as? TournamentTableViewController {
+            destVC.groupLable = groupLabel
         }
-        if segue.identifier == "matches" {
-            if let destVC = segue.destination as? MatchesViewController {
-                destVC.matchesLableText = matchesLableText
-            }
+        if segue.identifier == "matches", let destVC = segue.destination as? MatchesViewController {
+            destVC.matchesLabelText = matchesLabelText
         }
     }
-
-
 }
+
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
-        
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell else {return TableViewCell()}
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell else {
+            return TableViewCell()
+        }
         cell.config(nameOfLable: dataSource[indexPath.row])
-        cell.backgroundColor = UIColor .clear
+        cell.backgroundColor = .clear
         cell.selectionStyle = .none
-        
         return cell
     }
     
@@ -139,11 +124,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        groupLable = dataSource[indexPath.row]
+        groupLabel = dataSource[indexPath.row]
         performSegue(withIdentifier: "tournament", sender: self)
-        
     }
-    
-    
 }
-
