@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum FlagsEmoji: String {
     case Germany
     case Hungary
@@ -31,7 +32,7 @@ enum FlagsEmoji: String {
     case Georgia
     case CzechRepublic
     case Slovakia
-    
+
     var getFlag: String {
         switch self {
         case .Germany:
@@ -39,7 +40,7 @@ enum FlagsEmoji: String {
         case .Hungary:
             return "🇭🇺"
         case .Scotland:
-            return "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+            return "🏴"
         case .Switzerland:
             return "🇨🇭"
         case .Spain:
@@ -57,7 +58,7 @@ enum FlagsEmoji: String {
         case .Denmark:
             return "🇩🇰"
         case .England:
-            return "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+            return "🏴"
         case .Poland:
             return "🇵🇱"
         case .Austria:
@@ -65,7 +66,7 @@ enum FlagsEmoji: String {
         case .Netherlands:
             return "🇳🇱"
         case .France:
-            return "🇲🇫"
+            return "🇫🇷"
         case .Romania:
             return "🇷🇴"
         case .Belgium:
@@ -82,8 +83,59 @@ enum FlagsEmoji: String {
             return "🇨🇿"
         case .Slovakia:
             return "🇸🇰"
-            
         }
     }
-
+    
+    var getRussianName: String {
+        switch self {
+        case .Germany:
+            return "Германия"
+        case .Hungary:
+            return "Венгрия"
+        case .Scotland:
+            return "Шотландия"
+        case .Switzerland:
+            return "Швейцария"
+        case .Spain:
+            return "Испания"
+        case .Italy:
+            return "Италия"
+        case .Croatia:
+            return "Хорватия"
+        case .Albania:
+            return "Албания"
+        case .Slovenia:
+            return "Словения"
+        case .Serbia:
+            return "Сербия"
+        case .Denmark:
+            return "Дания"
+        case .England:
+            return "Англия"
+        case .Poland:
+            return "Польша"
+        case .Austria:
+            return "Австрия"
+        case .Netherlands:
+            return "Нидерланды"
+        case .France:
+            return "Франция"
+        case .Romania:
+            return "Румыния"
+        case .Belgium:
+            return "Бельгия"
+        case .Ukraine:
+            return "Украина"
+        case .Turkey:
+            return "Турция"
+        case .Portugal:
+            return "Португалия"
+        case .Georgia:
+            return "Грузия"
+        case .CzechRepublic:
+            return "Чехия"
+        case .Slovakia:
+            return "Словакия"
+        }
+    }
 }

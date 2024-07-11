@@ -21,7 +21,7 @@
                     <connections>
                         <segue destination="Lna-2O-6tH" kind="relationship" relationship="viewControllers" id="jIh-GZ-nv0"/>
                         <segue destination="zyS-7X-Fos" kind="relationship" relationship="viewControllers" id="Wi5-T9-wtO"/>
-                        <segue destination="uKZ-2d-LyU" kind="relationship" relationship="viewControllers" id="GLb-NM-zUd"/>
+                        <segue destination="4Gp-na-AyM" kind="relationship" relationship="viewControllers" id="q4Z-Wz-d4v"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYm-ue-AmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,15 +251,15 @@
             </objects>
             <point key="canvasLocation" x="-2755" y="-333"/>
         </scene>
-        <!--TeamsList-->
-        <scene sceneID="Ge4-mx-BUm">
+        <!--TeamsPage-->
+        <scene sceneID="N8G-wM-qQD">
             <objects>
-                <viewControllerPlaceholder storyboardName="TeamsList" referencedIdentifier="TeamsList" id="uKZ-2d-LyU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cb8-C9-vna"/>
+                <viewControllerPlaceholder storyboardName="TeamsPage" referencedIdentifier="TeamsPage" id="4Gp-na-AyM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TLc-AT-fq9"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H5K-oy-l6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDG-cp-Ukz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127" y="-156"/>
+            <point key="canvasLocation" x="1" y="-215"/>
         </scene>
     </scenes>
     <resources>
