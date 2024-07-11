@@ -18,6 +18,9 @@ class MatchesTableViewCell: UITableViewCell {
     @IBOutlet weak var firstTeamName: UILabel!
     @IBOutlet weak var dateOfMatch: UILabel!
     @IBOutlet weak var secondTeamScore: UILabel!
+    
+    @IBOutlet weak var secodTeamFlag: UILabel!
+    @IBOutlet weak var firstTeamFlag: UILabel!
     @IBOutlet weak var firstTeamScore: UILabel!
     
     override func prepareForReuse() {
@@ -30,6 +33,19 @@ class MatchesTableViewCell: UITableViewCell {
 //        }).joined(separator: ", ") else {return}
 //        print(goalDetailsStrings)
         // Соединение всех строк в одну, разделенную запятыми
+        var toFlagFirst: String
+        var toFlagSecond: String
+        toFlagFirst = match.team1.name.description
+        toFlagSecond = match.team2.name.description
+        if toFlagFirst == "Czech Republic" {
+            toFlagFirst = "CzechRepublic"
+        }
+        else if toFlagSecond == "Czech Republic" {
+            toFlagSecond = "CzechRepublic"
+        }
+        firstTeamFlag.text = FlagsEmoji(rawValue: toFlagFirst)?.getFlag
+        secodTeamFlag.text = FlagsEmoji(rawValue: toFlagSecond)?.getFlag
+        
         firstTeamGoals.text = match.goals1?.map({ goal in
             "\(goal.name): \(goal.minute)"
         }).joined(separator: ", ")

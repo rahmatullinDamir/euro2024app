@@ -59,6 +59,7 @@ class TournamentTableViewController: UIViewController {
                 }
             }
             
+//            print(teams)
             var scoreOfTeam: Int = 0
             for i in teams {
                 for j in matchesFiltred {

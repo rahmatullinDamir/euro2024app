@@ -16,6 +16,7 @@ class TournamentTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfGames: UILabel!
  
     
+    @IBOutlet weak var flag: UILabel!
     @IBOutlet weak var teamName: UILabel!
     @IBOutlet weak var numberOfPoints: UILabel!
     @IBOutlet weak var loseGames: UILabel!
@@ -24,6 +25,7 @@ class TournamentTableViewCell: UITableViewCell {
     
     func config(match: Dictionary<String, Int>.Element) {
         var drawGamesNum: Int
+        var toFlag: String
         self.teamName.text = match.key
         self.numberOfPoints.text = match.value.description
         var winGames = match.value / 3
@@ -42,6 +44,13 @@ class TournamentTableViewCell: UITableViewCell {
         self.drawGames.text = drawGamesNum.description
         self.loseGames.text = looseGames.description
         self.numberOfGames.text = 3.description
+        if match.key == "Czech Republic" {
+            toFlag = "CzechRepublic"
+        }
+        else {
+            toFlag = match.key
+        }
+        self.flag.text = FlagsEmoji(rawValue: toFlag)?.getFlag
     }
 
 }
