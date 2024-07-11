@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8313C8BE2C3AC45C00FD6AD2 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */; };
 		8313C8C32C3C151400FD6AD2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8C22C3C151400FD6AD2 /* Models.swift */; };
 		8313C8C92C3D241A00FD6AD2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8C82C3D241900FD6AD2 /* NetworkManager.swift */; };
-		8313C8CD2C3EB86C00FD6AD2 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8CC2C3EB86B00FD6AD2 /* MatchesTableViewCell.swift */; };
-		8313C8CF2C3ED54900FD6AD2 /* TournamentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8CE2C3ED54900FD6AD2 /* TournamentTableViewCell.swift */; };
-		8313C8D12C3EDDE200FD6AD2 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8313C8D02C3EDDE200FD6AD2 /* Groups.swift */; };
-		837130562C3F6F38007FBEA1 /* FlagsEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837130552C3F6F38007FBEA1 /* FlagsEmoji.swift */; };
 		83D193592C38079700882FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D193582C38079700882FB6 /* AppDelegate.swift */; };
 		83D1935B2C38079700882FB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1935A2C38079700882FB6 /* SceneDelegate.swift */; };
-		83D1935D2C38079700882FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1935C2C38079700882FB6 /* ViewController.swift */; };
-		83D193602C38079700882FB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83D1935F2C38079700882FB6 /* Base */; };
 		83D193622C38079900882FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D193612C38079900882FB6 /* Assets.xcassets */; };
 		83D193652C38079900882FB6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 83D193642C38079900882FB6 /* Base */; };
-		83D1936D2C38266100882FB6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1936C2C38266100882FB6 /* TableViewCell.swift */; };
-		83D1936F2C396ADA00882FB6 /* TournamentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */; };
-		921A122B2C3DEDE500A546B8 /* MatchStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A122A2C3DEDE500A546B8 /* MatchStage.swift */; };
+		921A12432C3FF30D00A546B8 /* CalendarPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921A12412C3FF30D00A546B8 /* CalendarPage.storyboard */; };
+		921A124A2C3FF31F00A546B8 /* TournamentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12442C3FF31F00A546B8 /* TournamentTableViewController.swift */; };
+		921A124B2C3FF31F00A546B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12452C3FF31F00A546B8 /* ViewController.swift */; };
+		921A124C2C3FF31F00A546B8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12462C3FF31F00A546B8 /* TableViewCell.swift */; };
+		921A124D2C3FF31F00A546B8 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12472C3FF31F00A546B8 /* MatchesTableViewCell.swift */; };
+		921A124E2C3FF31F00A546B8 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12482C3FF31F00A546B8 /* MatchesViewController.swift */; };
+		921A124F2C3FF31F00A546B8 /* TournamentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12492C3FF31F00A546B8 /* TournamentTableViewCell.swift */; };
+		921A12622C3FF35900A546B8 /* MatchStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12612C3FF35900A546B8 /* MatchStage.swift */; };
+		921A12642C3FF39C00A546B8 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12632C3FF39C00A546B8 /* Groups.swift */; };
+		921A12662C3FF3AB00A546B8 /* FlagsEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12652C3FF3AB00A546B8 /* FlagsEmoji.swift */; };
+		921A127F2C3FF5E100A546B8 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12772C3FF5E100A546B8 /* TeamDetailsViewController.swift */; };
+		921A12802C3FF5E100A546B8 /* PlayerTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12782C3FF5E100A546B8 /* PlayerTableViewCell2.swift */; };
+		921A12812C3FF5E100A546B8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A12792C3FF5E100A546B8 /* Team.swift */; };
+		921A12822C3FF5E100A546B8 /* Team2DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A127A2C3FF5E100A546B8 /* Team2DetailsViewController.swift */; };
+		921A12832C3FF5E100A546B8 /* TeamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A127B2C3FF5E100A546B8 /* TeamsCollectionViewCell.swift */; };
+		921A12842C3FF5E100A546B8 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A127C2C3FF5E100A546B8 /* PlayerTableViewCell.swift */; };
+		921A12852C3FF5E100A546B8 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A127D2C3FF5E100A546B8 /* TeamsViewController.swift */; };
+		921A12862C3FF5E100A546B8 /* TeamsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921A127E2C3FF5E100A546B8 /* TeamsList.storyboard */; };
 		92FE34782C3D6AE90065EC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FE34772C3D6AE90065EC28 /* Main.storyboard */; };
 		AB4B8BF12C3EBBD000FB4B48 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4B8BEF2C3EBBD000FB4B48 /* Profile.storyboard */; };
 		AB4B8BF22C3EBBD000FB4B48 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4B8BF02C3EBBD000FB4B48 /* ProfileViewController.swift */; };
@@ -31,24 +39,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		8313C8C22C3C151400FD6AD2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		8313C8C82C3D241900FD6AD2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		8313C8CC2C3EB86B00FD6AD2 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
-		8313C8CE2C3ED54900FD6AD2 /* TournamentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTableViewCell.swift; sourceTree = "<group>"; };
-		8313C8D02C3EDDE200FD6AD2 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
-		837130552C3F6F38007FBEA1 /* FlagsEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsEmoji.swift; sourceTree = "<group>"; };
 		83D193552C38079700882FB6 /* euro2024app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = euro2024app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D193582C38079700882FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D1935A2C38079700882FB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83D1935C2C38079700882FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83D1935F2C38079700882FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CalendarPage.storyboard; sourceTree = "<group>"; };
 		83D193612C38079900882FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D193642C38079900882FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D193662C38079900882FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Modules/Calendar/Info.plist; sourceTree = "<group>"; };
-		83D1936C2C38266100882FB6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTableViewController.swift; sourceTree = "<group>"; };
-		921A122A2C3DEDE500A546B8 /* MatchStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStage.swift; sourceTree = "<group>"; };
+		921A12422C3FF30D00A546B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Page/Base.lproj/CalendarPage.storyboard"; sourceTree = "<group>"; };
+		921A12442C3FF31F00A546B8 /* TournamentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TournamentTableViewController.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Views/TournamentTableViewController.swift"; sourceTree = "<group>"; };
+		921A12452C3FF31F00A546B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Views/ViewController.swift"; sourceTree = "<group>"; };
+		921A12462C3FF31F00A546B8 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Views/TableViewCell.swift"; sourceTree = "<group>"; };
+		921A12472C3FF31F00A546B8 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchesTableViewCell.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Views/MatchesTableViewCell.swift"; sourceTree = "<group>"; };
+		921A12482C3FF31F00A546B8 /* MatchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchesViewController.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Views/MatchesViewController.swift"; sourceTree = "<group>"; };
+		921A12492C3FF31F00A546B8 /* TournamentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TournamentTableViewCell.swift; path = "../../../../../../../Library/Mobile Documents/.Trash/euro2024app 14.00.39/euro2024app/euro2024app/Modules/Calendar/Views/TournamentTableViewCell.swift"; sourceTree = "<group>"; };
+		921A12612C3FF35900A546B8 /* MatchStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStage.swift; sourceTree = "<group>"; };
+		921A12632C3FF39C00A546B8 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		921A12652C3FF3AB00A546B8 /* FlagsEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsEmoji.swift; sourceTree = "<group>"; };
+		921A12772C3FF5E100A546B8 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamDetailsViewController.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/TeamDetailsViewController.swift"; sourceTree = "<group>"; };
+		921A12782C3FF5E100A546B8 /* PlayerTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerTableViewCell2.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/PlayerTableViewCell2.swift"; sourceTree = "<group>"; };
+		921A12792C3FF5E100A546B8 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/Team.swift"; sourceTree = "<group>"; };
+		921A127A2C3FF5E100A546B8 /* Team2DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team2DetailsViewController.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/Team2DetailsViewController.swift"; sourceTree = "<group>"; };
+		921A127B2C3FF5E100A546B8 /* TeamsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsCollectionViewCell.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/TeamsCollectionViewCell.swift"; sourceTree = "<group>"; };
+		921A127C2C3FF5E100A546B8 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerTableViewCell.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/PlayerTableViewCell.swift"; sourceTree = "<group>"; };
+		921A127D2C3FF5E100A546B8 /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamsViewController.swift; path = "../../../../../../Downloads/euro2024app-main/Teams/TeamsViewController.swift"; sourceTree = "<group>"; };
+		921A127E2C3FF5E100A546B8 /* TeamsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TeamsList.storyboard; path = "../../../../../../Downloads/euro2024app-main/Teams/TeamsList.storyboard"; sourceTree = "<group>"; };
 		92FE34772C3D6AE90065EC28 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AB4B8BEF2C3EBBD000FB4B48 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		AB4B8BF02C3EBBD000FB4B48 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +86,7 @@
 		8313C8C12C3C14CE00FD6AD2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				921A12502C3FF32400A546B8 /* Teams */,
 				AB4B8BF32C3EC08000FB4B48 /* Auth */,
 				AB4B8BEE2C3EBACA00FB4B48 /* Profile */,
 				8313C8C42C3CFC0200FD6AD2 /* Calendar */,
@@ -142,6 +159,21 @@
 			path = euro2024app;
 			sourceTree = "<group>";
 		};
+		921A12502C3FF32400A546B8 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				921A127C2C3FF5E100A546B8 /* PlayerTableViewCell.swift */,
+				921A12782C3FF5E100A546B8 /* PlayerTableViewCell2.swift */,
+				921A12792C3FF5E100A546B8 /* Team.swift */,
+				921A127A2C3FF5E100A546B8 /* Team2DetailsViewController.swift */,
+				921A12772C3FF5E100A546B8 /* TeamDetailsViewController.swift */,
+				921A127B2C3FF5E100A546B8 /* TeamsCollectionViewCell.swift */,
+				921A127E2C3FF5E100A546B8 /* TeamsList.storyboard */,
+				921A127D2C3FF5E100A546B8 /* TeamsViewController.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
 		927BD3522C3D6D8B00738043 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,9 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				8313C8C22C3C151400FD6AD2 /* Models.swift */,
-				921A122A2C3DEDE500A546B8 /* MatchStage.swift */,
-				8313C8D02C3EDDE200FD6AD2 /* Groups.swift */,
-				837130552C3F6F38007FBEA1 /* FlagsEmoji.swift */,
+				921A12612C3FF35900A546B8 /* MatchStage.swift */,
+				921A12632C3FF39C00A546B8 /* Groups.swift */,
+				921A12652C3FF3AB00A546B8 /* FlagsEmoji.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,12 +196,12 @@
 		92FE34752C3D6A830065EC28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				83D1935C2C38079700882FB6 /* ViewController.swift */,
-				83D1936C2C38266100882FB6 /* TableViewCell.swift */,
-				83D1936E2C396ADA00882FB6 /* TournamentTableViewController.swift */,
-				8313C8BD2C3AC45C00FD6AD2 /* MatchesViewController.swift */,
-				8313C8CC2C3EB86B00FD6AD2 /* MatchesTableViewCell.swift */,
-				8313C8CE2C3ED54900FD6AD2 /* TournamentTableViewCell.swift */,
+				921A12472C3FF31F00A546B8 /* MatchesTableViewCell.swift */,
+				921A12482C3FF31F00A546B8 /* MatchesViewController.swift */,
+				921A12462C3FF31F00A546B8 /* TableViewCell.swift */,
+				921A12492C3FF31F00A546B8 /* TournamentTableViewCell.swift */,
+				921A12442C3FF31F00A546B8 /* TournamentTableViewController.swift */,
+				921A12452C3FF31F00A546B8 /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,7 +209,7 @@
 		92FE34762C3D6AC60065EC28 /* Page */ = {
 			isa = PBXGroup;
 			children = (
-				83D1935E2C38079700882FB6 /* CalendarPage.storyboard */,
+				921A12412C3FF30D00A546B8 /* CalendarPage.storyboard */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -259,10 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D193622C38079900882FB6 /* Assets.xcassets in Resources */,
+				921A12432C3FF30D00A546B8 /* CalendarPage.storyboard in Resources */,
 				83D193652C38079900882FB6 /* Base in Resources */,
 				AB4B8BF12C3EBBD000FB4B48 /* Profile.storyboard in Resources */,
-				83D193602C38079700882FB6 /* Base in Resources */,
 				92FE34782C3D6AE90065EC28 /* Main.storyboard in Resources */,
+				921A12862C3FF5E100A546B8 /* TeamsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,36 +306,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837130562C3F6F38007FBEA1 /* FlagsEmoji.swift in Sources */,
 				8313C8C32C3C151400FD6AD2 /* Models.swift in Sources */,
-				8313C8CF2C3ED54900FD6AD2 /* TournamentTableViewCell.swift in Sources */,
+				921A124F2C3FF31F00A546B8 /* TournamentTableViewCell.swift in Sources */,
+				921A12812C3FF5E100A546B8 /* Team.swift in Sources */,
+				921A12832C3FF5E100A546B8 /* TeamsCollectionViewCell.swift in Sources */,
+				921A12662C3FF3AB00A546B8 /* FlagsEmoji.swift in Sources */,
 				AB4B8BF92C3EC51400FB4B48 /* RegisterViewController.swift in Sources */,
-				8313C8BE2C3AC45C00FD6AD2 /* MatchesViewController.swift in Sources */,
-				83D1935D2C38079700882FB6 /* ViewController.swift in Sources */,
-				83D1936D2C38266100882FB6 /* TableViewCell.swift in Sources */,
-				921A122B2C3DEDE500A546B8 /* MatchStage.swift in Sources */,
+				921A124A2C3FF31F00A546B8 /* TournamentTableViewController.swift in Sources */,
+				921A124B2C3FF31F00A546B8 /* ViewController.swift in Sources */,
+				921A124D2C3FF31F00A546B8 /* MatchesTableViewCell.swift in Sources */,
 				8313C8C92C3D241A00FD6AD2 /* NetworkManager.swift in Sources */,
-				83D1936F2C396ADA00882FB6 /* TournamentTableViewController.swift in Sources */,
+				921A12642C3FF39C00A546B8 /* Groups.swift in Sources */,
+				921A12852C3FF5E100A546B8 /* TeamsViewController.swift in Sources */,
+				921A124E2C3FF31F00A546B8 /* MatchesViewController.swift in Sources */,
+				921A124C2C3FF31F00A546B8 /* TableViewCell.swift in Sources */,
+				AB4B8BF22C3EBBD000FB4B48 /* ProfileViewController.swift in Sources */,
+				921A12622C3FF35900A546B8 /* MatchStage.swift in Sources */,
+				921A12822C3FF5E100A546B8 /* Team2DetailsViewController.swift in Sources */,
+				921A12802C3FF5E100A546B8 /* PlayerTableViewCell2.swift in Sources */,
+				83D193592C38079700882FB6 /* AppDelegate.swift in Sources */,
+				921A12842C3FF5E100A546B8 /* PlayerTableViewCell.swift in Sources */,
+				83D1935B2C38079700882FB6 /* SceneDelegate.swift in Sources */,
+				921A127F2C3FF5E100A546B8 /* TeamDetailsViewController.swift in Sources */,
+				AB4B8BFB2C3EC6F900FB4B48 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83D1935E2C38079700882FB6 /* CalendarPage.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83D1935F2C38079700882FB6 /* Base */,
-			);
-			name = CalendarPage.storyboard;
-			sourceTree = "<group>";
-		};
 		83D193632C38079900882FB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83D193642C38079900882FB6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		921A12412C3FF30D00A546B8 /* CalendarPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921A12422C3FF30D00A546B8 /* Base */,
+			);
+			name = CalendarPage.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
