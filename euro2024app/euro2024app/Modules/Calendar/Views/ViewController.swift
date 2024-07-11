@@ -98,9 +98,9 @@ class ViewController: UIViewController {
         if segue.identifier == "tournament", let destVC = segue.destination as? TournamentTableViewController {
             destVC.groupLable = groupLabel
         }
-//        if segue.identifier == "matches", let destVC = segue.destination as? MatchesViewController {
-//            destVC.matchesLabelText = matchesLabelText
-//        }
+        if segue.identifier == "matches", let destVC = segue.destination as? MatchesViewController {
+            destVC.matchesLabelText = matchesLabelText
+        }
     }
 }
 

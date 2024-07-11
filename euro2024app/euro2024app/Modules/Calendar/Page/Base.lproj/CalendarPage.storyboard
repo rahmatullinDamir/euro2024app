@@ -331,7 +331,7 @@
                                                     <outlet property="loseGames" destination="oy1-9w-Zhs" id="XE4-yw-xp8"/>
                                                     <outlet property="numberOfGames" destination="u5e-KP-zP7" id="bxa-8x-yG7"/>
                                                     <outlet property="numberOfPoints" destination="8hg-lj-pyK" id="ZyZ-fB-qaT"/>
-                                                    <outlet property="teamName" destination="Ete-1q-rRr" id="55M-Sp-E4R"/>
+                                                    <outlet property="teamName" destination="hGQ-0F-Eph" id="MYB-9t-WiD"/>
                                                     <outlet property="winGames" destination="Ete-1q-rRr" id="Er2-cX-DYS"/>
                                                 </connections>
                                             </tableViewCell>
